@@ -48,16 +48,11 @@ class ViewController: UIViewController {
                 treasureCase.isHidden = false
                 gameOver.isHidden = true
                 win.isHidden = false
-                
-                
             }
-                
                 
             else {
                 treasureCase.isHidden = true
                 guessText.isHidden = false
-                
-                
             }
             
             
@@ -74,6 +69,8 @@ class ViewController: UIViewController {
             if guessCount <= 5 {
                 hintbtn.isHidden = false
                 guessText.isHidden = false
+            }
+            
                 
                 if guessCount == 0 {
                     uncase.isHidden = true
@@ -103,7 +100,6 @@ class ViewController: UIViewController {
                 
         }
         
-    }
     
     @IBAction func hintbtn(_ sender: Any) {
         hint.isHidden = false
